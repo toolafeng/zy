@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/zy_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dip"
+        android:visibility="visible" >
+		
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入账号" />
+
+        <EditText
+            android:id="@+id/tv_login_userid"
+            style="@style/style_edittext_default"
+            android:layout_width="fill_parent"
+            android:hint="请输入账号" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入密码" />
+
+        <EditText
+            android:id="@+id/tv_login_pwd"
+            style="@style/style_edittext_default"
+            android:layout_width="fill_parent"
+            android:hint="请输入密码"
+            android:text="请输入密码"
+             />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/style_button_default"
+            android:layout_width="fill_parent"
+            android:text="登陆" />
+
+        <TextView
+            android:id="@+id/layout_login_regist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="我要注册"
+            android:textColor="#0062B7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_regist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入账号" />
+
+        <EditText
+            android:id="@+id/tv_login_regist"
+            style="@style/style_edittext_default"
+            android:layout_width="fill_parent"
+            android:hint="请输入账号" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入密码" />
+
+        <EditText
+            android:id="@+id/tv_regist_pwd"
+            style="@style/style_edittext_default"
+            android:layout_width="fill_parent"
+            android:hint="请输入密码" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入密码" />
+
+        <EditText
+            android:id="@+id/tv_regist_pwd2"
+            style="@style/style_edittext_default"
+            android:layout_width="fill_parent"
+            android:hint="请输入密码" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_regist_login"
+                style="@style/style_button_default"
+                android:layout_weight="1"
+                android:text="登陆" />
+
+            <Button
+                android:id="@+id/btn_regist_submit"
+                style="@style/style_button_default"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="注册" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

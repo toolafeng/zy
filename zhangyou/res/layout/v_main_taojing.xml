@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_container"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_date_01"
+            style="@style/style_home_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_taojing_a" />
+
+        <ImageView
+            android:id="@+id/iv_date_02"
+            style="@style/style_home_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_taojing_b" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:id="@+id/layout_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+
+            <ImageView style="@style/style_home_image" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="#F7F7F7" >
+
+        <TextView
+            android:id="@+id/tv_hot_game"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:text="热门游戏"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_ceping"
+            style="@style/style_title_button"
+            android:layout_toLeftOf="@+id/btn_income_list"
+            android:background="@drawable/button_title"
+            android:gravity="center"
+            android:text="测评"
+            android:textColor="@drawable/button_title_textcolor" />
+
+        <Button
+            android:id="@+id/btn_income_list"
+            style="@style/style_title_button"
+            android:layout_width="65dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toLeftOf="@+id/btn_income_list"
+            android:background="@drawable/button_title"
+            android:gravity="center"
+            android:text="收入榜"
+            android:textColor="@drawable/button_title_textcolor" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="5dp" >
+
+        <include layout="@layout/activity_ptr_list" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/list_empty_view" />
+    </RelativeLayout>
+
+</LinearLayout>

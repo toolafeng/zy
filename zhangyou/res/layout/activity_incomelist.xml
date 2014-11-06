@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/zy_title_common" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_home_mode_flipper"
+        android:layout_marginTop="5dp"
+        android:background="#D1EEEE"
+        android:flipInterval="2000" >
+
+        <ImageView
+            android:id="@+id/iv_home_01"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="fitXY" />
+        <!--
+        <ImageView
+            android:id="@+id/iv_home_02"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_temp_02" />
+
+        <ImageView
+            android:id="@+id/iv_home_03"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_temp_03" />
+
+        <ImageView
+            android:id="@+id/iv_home_04"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_temp_04" />
+
+        <ImageView
+            android:id="@+id/iv_home_05"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_temp_05" />
+
+        <ImageView
+            android:id="@+id/iv_home_06"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_temp_01" />        -->
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="#dde7f4"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/tv_rank"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:drawableRight="@drawable/img_title"
+            android:gravity="center|left"
+            android:paddingLeft="5dip"
+            android:text="排名" />
+
+        <TextView
+            android:id="@+id/tv_inCome"
+            android:layout_width="70dip"
+            android:layout_height="fill_parent"
+            android:drawableRight="@drawable/img_title"
+            android:gravity="center|left"
+            android:paddingLeft="5dip"
+            android:text="收入RMB" />
+
+        <TextView
+            android:id="@+id/tv_uname"
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:drawableRight="@drawable/img_title"
+            android:gravity="center|left"
+            android:paddingLeft="5dip"
+            android:text="用户" />
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|left"
+            android:paddingLeft="5dip"
+            android:text="所在学校" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="5dp" >
+
+        <include layout="@layout/activity_ptr_list" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/list_empty_view" />
+    </RelativeLayout>
+
+</LinearLayout>

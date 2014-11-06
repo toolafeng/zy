@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_title"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/layout_default_title"
+        style="@style/style_title"
+        android:background="@drawable/img_title"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_title_back"
+            style="@style/style_title_button"
+            android:background="@drawable/button_title_back"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/layout_title_type_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/style_title_text"
+                android:text="首页"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_title_more"
+            style="@style/style_title_button"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_title_right"
+            android:gravity="center"
+            android:textColor="@color/color_title" />
+    </RelativeLayout>
+
+</RelativeLayout>

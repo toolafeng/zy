@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_page"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_sliding_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.my.widget.image.CircularImage
+            android:id="@+id/cover_user_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/img_zy_loading_person" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="欢迎:张三"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="掌友币:80枚"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="你今天未签到"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_sliding_menu_login"
+                    style="@style/style_title_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:background="@drawable/button_default"
+                    android:gravity="center"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="登陆"
+                    android:textColor="@color/color_title" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_search"
+                android:text="找人,找游戏,找文章" />
+
+            <Button
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_letter"
+                android:text="私信" />
+
+            <Button
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_share"
+                android:text="分享" />
+
+            <Button
+                android:id="@+id/btn_clear_cache"
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_clear_cache"
+                android:text="清除缓存" />
+
+            <Button
+                android:id="@+id/btn_download_manager"
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_download"
+                android:text="下载管理" />
+
+            <Button
+                android:id="@+id/btn_check_update"
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_refresh"
+                android:text="检查新版本" />
+
+            <Button
+                android:id="@+id/btn_about_product"
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_info"
+                android:text="产品信息" />
+
+            <Button
+                android:id="@+id/btn_disclaimer"
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_alert"
+                android:text="免责声明" />
+
+            <Button
+                android:id="@+id/btn_business_cooperation"
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_hand"
+                android:text="商务合作" />
+
+            <Button
+                android:id="@+id/btn_report"
+                style="@style/style_sliding_main_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_sliding_edit"
+                android:text="意见反馈" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

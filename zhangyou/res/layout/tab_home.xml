@@ -1,0 +1,108 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <Button
+            android:id="@+id/button_state1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_title_button_a"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_home"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:singleLine="true"
+            android:tag="0"
+            android:text="首页"
+            android:textColor="@color/text_service_color"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <Button
+            android:id="@+id/button_state2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_title_button_a"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_taojing"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:singleLine="true"
+            android:tag="1"
+            android:text="淘金"
+            android:textColor="@color/text_service_color"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <Button
+            android:id="@+id/button_state3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_title_button_a"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_zhangyou"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:singleLine="true"
+            android:tag="2"
+            android:text="掌游"
+            android:textColor="@color/text_service_color"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <Button
+            android:id="@+id/button_state4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_title_button_a"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_zhangxiao"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:singleLine="true"
+            android:tag="3"
+            android:text="掌校"
+            android:textColor="@color/text_service_color"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <Button
+            android:id="@+id/button_state5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_title_button_a"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_zhangyue"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:singleLine="true"
+            android:tag="4"
+            android:text="掌约"
+            android:textColor="@color/text_service_color"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+</merge>

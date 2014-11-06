@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="3dip"
+    android:paddingTop="3dip" >
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:gravity="center|left"
+        android:paddingLeft="5dip"
+        android:text="排名" />
+
+    <TextView
+        android:id="@+id/tv_inCome"
+        android:layout_width="70dip"
+        android:layout_height="60dip"
+        android:gravity="center|left"
+        android:paddingLeft="5dip"
+        android:text="收入RMB" />
+
+    <TextView
+        android:id="@+id/tv_uname"
+        android:layout_width="150dip"
+        android:layout_height="60dip"
+        android:gravity="center|left"
+        android:paddingLeft="5dip"
+        android:text="用户" />
+
+    <TextView
+        android:id="@+id/tv_school"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:gravity="center|left"
+        android:paddingLeft="5dip"
+        android:text="所在学校" />
+
+</LinearLayout>

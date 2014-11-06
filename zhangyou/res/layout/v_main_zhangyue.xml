@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_container"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_home_mode_flipper"
+        android:layout_marginTop="10dp"
+        android:background="#D1EEEE"
+        android:flipInterval="2000" >
+
+        <ImageView
+            android:id="@+id/iv_date_01"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_date_02"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="fitXY" />
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+
+        <com.my.pulltorefresh.xlistview.XListView
+            xmlns:pla="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/xListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            pla:plaColumnNumber="2"
+            pla:plaLandscapeColumnNumber="3" >
+        </com.my.pulltorefresh.xlistview.XListView>
+    </LinearLayout>
+
+</LinearLayout>

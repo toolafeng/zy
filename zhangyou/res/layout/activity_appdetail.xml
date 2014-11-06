@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_page"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/zy_title" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layout_download"
+        android:layout_below="@+id/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/layout_download"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="downLoad"
+            android:text="立刻下载" />
+    </RelativeLayout>
+
+</RelativeLayout>

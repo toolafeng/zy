@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/style_page"
+    tools:context=".HomeActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout_main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_title"
+        android:orientation="vertical" >
+        <include layout="@layout/include_main_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_main_title"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homeViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tab_view" >
+        </android.support.v4.view.ViewPager>
+
+        <com.zy.widget.TabView
+            android:id="@+id/tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#1e1d1d" />
+    </RelativeLayout>
+
+</RelativeLayout>

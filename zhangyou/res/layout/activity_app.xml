@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/zy_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title" >
+
+        <LinearLayout
+            android:id="@+id/layout_01_a"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最多回复" />
+
+            <Button
+                android:id="@+id/btn_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_01"
+        android:paddingTop="5dp" >
+
+        <include layout="@layout/activity_ptr_list" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_title"
+        android:visibility="gone" >
+
+        <include layout="@layout/list_empty_view" />
+    </RelativeLayout>
+
+</RelativeLayout>

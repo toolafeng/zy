@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_container"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#D4D4D4"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_00"
+                style="@style/style_zhangyou_tab"
+                android:checked="true"
+                android:tag="0"
+                android:text="我的游戏"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_01"
+                style="@style/style_zhangyou_tab"
+                android:tag="1"
+                android:text="热门游戏" />
+
+            <RadioButton
+                android:id="@+id/rb_02"
+                style="@style/style_zhangyou_tab"
+                android:tag="2"
+                android:text="排行讨论"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_03"
+                style="@style/style_zhangyou_tab"
+                android:tag="3"
+                android:text="游戏美图" />
+
+            <RadioButton
+                android:id="@+id/rb_04"
+                style="@style/style_zhangyou_tab"
+                android:tag="4"
+                android:text="游戏视频"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_05"
+                style="@style/style_zhangyou_tab"
+                android:tag="5"
+                android:text="开服发号" />
+
+            <RadioButton
+                android:id="@+id/rb_06"
+                style="@style/style_zhangyou_tab"
+                android:tag="6"
+                android:text="游戏分类"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_07"
+                style="@style/style_zhangyou_tab"
+                android:tag="7"
+                android:text="游戏专题" />
+
+            <RadioButton
+                android:id="@+id/rb_08"
+                style="@style/style_zhangyou_tab"
+                android:tag="8"
+                android:text="附近在玩"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_09"
+                style="@style/style_zhangyou_tab"
+                android:tag="9"
+                android:text="好友在玩"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rb_10"
+                style="@style/style_zhangyou_tab"
+                android:tag="10"
+                android:text="充值返利" />
+
+            <RadioButton
+                android:id="@+id/rb_11"
+                style="@style/style_zhangyou_tab"
+                android:tag="11"
+                android:text="我的游戏"
+                android:visibility="gone" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_home_mode_flipper"
+        android:layout_below="@+id/hsv"
+        android:layout_marginTop="10dp"
+        android:background="#D1EEEE"
+        android:flipInterval="2000" >
+
+        <ImageView
+            android:id="@+id/iv_game_01"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_game_02"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_game_03"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:scaleType="fitXY" />
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/flipper"
+        android:paddingTop="5dp" >
+
+        <include layout="@layout/activity_ptr_list" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/flipper"
+        android:visibility="gone" >
+
+        <include layout="@layout/list_empty_view" />
+    </RelativeLayout>
+
+</LinearLayout>

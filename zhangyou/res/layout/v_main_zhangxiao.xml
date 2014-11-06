@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_container"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_home_mode_flipper"
+        android:layout_marginTop="10dp"
+        android:background="#D1EEEE"
+        android:flipInterval="2000" >
+
+        <ImageView
+            android:id="@+id/iv_date_01"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_zy_loading" />
+
+        <ImageView
+            android:id="@+id/iv_date_02"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_zy_loading" />
+
+        <ImageView
+            android:id="@+id/iv_date_03"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_zy_loading" />
+
+        <ImageView
+            android:id="@+id/iv_date_04"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_zy_loading" />
+
+        <ImageView
+            android:id="@+id/iv_date_05"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_zy_loading" />
+
+        <ImageView
+            android:id="@+id/iv_date_06"
+            style="@style/style_home_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/img_zy_loading" />
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_news"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/img_benxiao"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/img_arrow_down"
+                android:gravity="center"
+                android:text="本校新闻" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_train"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/img_zhichang"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/img_arrow_down"
+                android:gravity="center"
+                android:text="职场培训" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_chicken_soup"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/img_xinling"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/img_arrow_down"
+                android:gravity="center"
+                android:text="心灵鸡汤" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_entertainment"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/img_yule"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/img_arrow_down"
+                android:gravity="center"
+                android:text="娱乐八卦" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

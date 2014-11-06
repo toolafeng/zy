@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="3dip"
+    android:paddingTop="3dip" >
+
+    <TextView
+        android:id="@+id/tv_inComeName"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="名称" />
+
+    <TextView
+        android:id="@+id/tv_inCome"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="收入RMB" />
+
+</LinearLayout>

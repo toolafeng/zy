@@ -1,0 +1,20 @@
+<resources>
+
+    <dimen name="slidingmenu_offset">60dip</dimen>
+    <dimen name="activity_horizontal_margin">16dip</dimen>
+    <dimen name="activity_vertical_margin">16dip</dimen>
+    <dimen name="x_y_home_image">100dip</dimen>
+    <dimen name="x_home_date_width">105dip</dimen>
+    <dimen name="height_title">48dip</dimen>
+    <dimen name="tab_height">50dip</dimen>
+    <dimen name="padding_container">5dip</dimen>
+    <dimen name="width_shadow">15dip</dimen>
+    <dimen name="offset_slidingmenu">60dip</dimen>
+    <dimen name="heigth_home_mode_title">35dip</dimen>
+    <dimen name="heigth_home_mode_image">100dip</dimen>
+    <dimen name="width_home_mode_image">100dip</dimen>
+    <dimen name="height_home_mode_flipper">100dip</dimen>
+    <dimen name="textsize_home_mode_more">13sp</dimen>
+    <dimen name="textsize_home_mode_left">15sp</dimen>
+
+</resources>

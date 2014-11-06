@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="heigth_home_mode_title">45dip</dimen>
+    <dimen name="heigth_home_mode_image">150dip</dimen>
+    <dimen name="x_y_home_image">110dip</dimen>
+    <dimen name="x_home_date_width">115dip</dimen>
+    <dimen name="width_home_mode_image">150dip</dimen>
+    <dimen name="height_home_mode_flipper">150dip</dimen>
+
+</resources>
